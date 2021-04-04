@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export DISPLAY=:0.0
+
+if [[ "$1" == "0" ]]; then
+	xset dpms force off
+elif [[ "$1" == "1" ]]; then
+	xset dpms force on
+fi

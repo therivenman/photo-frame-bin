@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export DISPLAY=:0.0
+
+status=$(xset q | grep Monitor | cut -d ' ' -f 5)
+
+if [[ $status == "On" ]]; then
+	echo 1
+else
+	echo 0
+fi

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+export DISPLAY=:0.0
+
+# Options
+PICTURE_DIR=/home/pi/Pictures/
+RELOAD_INTERVAL=60
+SLIDE_AVANCE_INTERVAL=15
+FEH_OPTIONS="-Y -x -q -D ${SLIDE_AVANCE_INTERVAL} -B black -F -Z -z -r -R ${RELOAD_INTERVAL} ${PICTURE_DIR}"
+
+while true
+do
+    if feh ${FEH_OPTIONS}; then
+        exit 0
+    fi
+
+    sleep 5
+done
+
