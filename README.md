@@ -13,5 +13,6 @@ Installation:
 2. Install startup script
 
   ```
+  rm ~/.config/lxsession/LXDE-pi/autostart
   ln -s ~/bin/autostart ~/.config/lxsession/LXDE-pi/autostart
   ```
