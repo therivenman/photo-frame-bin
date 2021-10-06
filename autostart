@@ -4,3 +4,4 @@
 @start-feh
 @rest-api.py
 @display-init
+@remount.sh
